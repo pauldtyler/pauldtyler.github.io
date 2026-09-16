@@ -86,6 +86,25 @@ a:focus-visible{outline:3px solid var(--orange-text); outline-offset:2px}
 .links a:hover{color:var(--orange-text)}
 .links .arrow{color:var(--zinnia-orange); font-weight:700}
 footer{margin:8px 0 0; text-align:center; font-size:13px; color:var(--meta)}
+
+/* Laptop and wider: hero on the left, About + links on the right, the whole block
+   vertically centred so it doesn't sit in the top-left of a big screen. */
+@media (min-width:860px){
+  body{min-height:100vh; display:flex; flex-direction:column}
+  main{
+    max-width:980px; width:100%; margin:auto; padding:48px 32px 56px;
+    display:grid; grid-template-columns:400px minmax(0,1fr); grid-template-areas:"hero about" "hero links" "footer footer";
+    column-gap:24px; row-gap:16px; align-items:start; align-content:start;
+  }
+  .hero{grid-area:hero; position:sticky; top:32px; padding:36px 32px}
+  .hero img{width:144px; height:144px}
+  h1{font-size:42px; margin-top:22px}
+  .about{grid-area:about; padding:28px 32px}
+  .about p.bio{font-size:16.5px}
+  .links{grid-area:links; padding:8px 32px}
+  .links a{font-size:16px}
+  footer{grid-area:footer; margin-top:16px}
+}
 </style>
 </head>
 <body>

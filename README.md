@@ -26,6 +26,9 @@ Urbanist (Google Fonts) throughout, Zinnia card language: white cards on `#F8F8F
 12px radius, `0 2px 6px rgba(0,0,0,.06)` shadow. Hero card carries the eyebrow, headshot, name, and the
 primary Book button, with Save contact / LinkedIn as a pair beneath it.
 
+One column up to 860px. Wider than that (laptops), `main` becomes a two-column grid: the hero card
+sticks on the left, About and links stack on the right, and the whole block is vertically centred.
+
 ## Colors
 
 Zinnia brand, with one deliberate deviation. No stock Zinnia orange reaches 4.5:1 on white
