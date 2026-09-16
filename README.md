@@ -3,7 +3,7 @@
 Static page for GitHub Pages. To point it at a new conference, edit two lines near the bottom of `index.html`:
 
     var CALENDLY = "https://calendly.com/paul-tyler-zinnia/<event-slug>";
-    var CONFERENCE = "at <Conference name>";
+    var CONFERENCE = "Meet me at <Conference name>";
 
 Add a phone number to `paul-tyler.vcf` with `TEL;TYPE=CELL:+1...` if you want it in the saved contact.
 Deliberately omitted: this repo is public, so the file is crawlable and the number would stay
@@ -19,6 +19,12 @@ request instead of two on conference wifi. The `.jpg` has to stay too — `og:im
 favicon need a real file URL and can't accept a data URI. Re-inline after replacing the photo:
 
     python3 -c "import base64;b=base64.b64encode(open('paul-tyler.jpg','rb').read()).decode();print(b)"
+
+## Design
+
+Urbanist (Google Fonts) throughout, Zinnia card language: white cards on `#F8F8F8`, `#E2E4E8` borders,
+12px radius, `0 2px 6px rgba(0,0,0,.06)` shadow. Hero card carries the eyebrow, headshot, name, and the
+primary Book button, with Save contact / LinkedIn as a pair beneath it.
 
 ## Colors
 
