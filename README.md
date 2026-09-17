@@ -31,7 +31,7 @@ Urbanist (Google Fonts) throughout, Zinnia card language: white cards on `#F8F8F
 primary Book button, with Save contact / LinkedIn as a pair beneath it.
 
 One column up to 860px. Wider than that (laptops), `main` becomes a two-column grid: the hero card
-sticks on the left, About and links stack on the right, and the whole block is vertically centred.
+sticks on the left, About, Zinnia, and links stack on the right, and the whole block is vertically centred.
 
 ## Colors
 

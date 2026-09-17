@@ -82,9 +82,11 @@ h1{font-weight:300; font-size:36px; line-height:1.05; margin:18px 0 6px; letter-
 }
 .btn:hover{border-color:#D0D4DA; background:var(--paper)}
 a:focus-visible{outline:3px solid var(--orange-text); outline-offset:2px}
-.about{padding:22px 24px}
+.about,.zinnia{padding:22px 24px}
 .label{margin:0 0 8px; color:var(--zinnia-orange); font-weight:700; font-size:15px}
-.about p.bio{margin:0; font-size:15.5px; color:var(--muted); text-wrap:pretty}
+.about p.bio,.zinnia p.bio{margin:0; font-size:15.5px; color:var(--muted); text-wrap:pretty}
+.zinnia .more{display:inline-flex; align-items:center; gap:6px; margin-top:12px; font-weight:600; font-size:15px; color:var(--orange-text); text-decoration:none}
+.zinnia .more:hover{text-decoration:underline}
 .links{padding:6px 24px}
 .links a{display:flex; justify-content:space-between; align-items:center; gap:12px; padding:14px 0; border-bottom:1px solid var(--rule); text-decoration:none; color:var(--ink); font-size:15px; font-weight:500}
 .links a:last-child{border-bottom:0}
@@ -98,14 +100,16 @@ footer{margin:8px 0 0; text-align:center; font-size:13px; color:var(--meta)}
   body{min-height:100vh; display:flex; flex-direction:column}
   main{
     max-width:980px; width:100%; margin:auto; padding:48px 32px 56px;
-    display:grid; grid-template-columns:400px minmax(0,1fr); grid-template-areas:"hero about" "hero links" "footer footer";
+    display:grid; grid-template-columns:400px minmax(0,1fr); grid-template-areas:"hero about" "hero zinnia" "hero links" "footer footer";
     column-gap:24px; row-gap:16px; align-items:start; align-content:start;
   }
   .hero{grid-area:hero; position:sticky; top:32px; padding:36px 32px}
   .hero img{width:144px; height:144px}
   h1{font-size:42px; margin-top:22px}
-  .about{grid-area:about; padding:28px 32px}
-  .about p.bio{font-size:16.5px}
+  .about{grid-area:about}
+  .zinnia{grid-area:zinnia}
+  .about,.zinnia{padding:28px 32px}
+  .about p.bio,.zinnia p.bio{font-size:16.5px}
   .links{grid-area:links; padding:8px 32px}
   .links a{font-size:16px}
   footer{grid-area:footer; margin-top:16px}
@@ -132,6 +136,12 @@ footer{margin:8px 0 0; text-align:center; font-size:13px; color:var(--meta)}
   <section class="card about">
     <p class="label">About</p>
     <p class="bio">I run marketing at Zinnia, the platform behind life and annuity distribution and administration, and I build the AI applications behind our enterprise sales work myself. Before Zinnia I served as CMO at Nassau Financial Group, where I founded its AI Governance Group and the Nassau Re/Imagine insurtech incubator, and led Fidelity &amp; Guaranty Life's strategy and marketing through its NYSE IPO. I host The L&amp;A Hub podcast. Cornell Law, Princeton.</p>
+  </section>
+
+  <section class="card zinnia">
+    <p class="label">Zinnia</p>
+    <p class="bio">Zinnia is the insurance technology platform for life and annuities. Carriers, distributors, and advisors use it to build products, sell them digitally, and service policies for the long term, from quotes, illustrations, and e-applications through underwriting, policy administration, and inforce servicing.</p>
+    <a class="more" href="https://zinnia.com">Learn more at zinnia.com <span class="arrow">&rarr;</span></a>
   </section>
 
   <section class="card links">
