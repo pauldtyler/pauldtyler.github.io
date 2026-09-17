@@ -1,9 +1,13 @@
 # Conference landing page
 
-Static page for GitHub Pages. To point it at a new conference, edit two lines near the bottom of `index.html`:
+Static page for GitHub Pages. To point it at a new conference, edit the lines near the bottom of `index.html`:
 
     var CALENDLY = "https://calendly.com/paul-tyler-zinnia/<event-slug>";
     var CONFERENCE = "Meet me at <Conference name>";
+    var PRECALL = "https://calendly.com/paul-tyler-zinnia/30min";
+
+`PRECALL` feeds the "Talk before the conference" button, a 30-minute Zoom for people who want to
+connect ahead of the event. It rarely changes; the other two change per conference.
 
 Add a phone number to `paul-tyler.vcf` with `TEL;TYPE=CELL:+1...` if you want it in the saved contact.
 Deliberately omitted: this repo is public, so the file is crawlable and the number would stay
